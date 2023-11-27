@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Course</title>
+        <link rel="stylesheet" href="CSS/Course.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="Images/logo.png">
+            </a>
+            <div class="navigation-bar" id="myNav">
+                <i class="fa fa-times" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="index.html">   Home    </a></li>
+                    <li><a href="About.html">   About   </a></li>
+                    <li><a href="Course.html">  Course  </a></li>
+                    <li><a href="Blog.html">    Blog    </a></li>
+                    <li><a href="Contact.html"> Contact </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div id="landing-section">
+            <div id="landing-section-text">
+                <h1 id="landing-section-heading"> Online Course Abailable </h1>
+                <p id="landing-section-desc">
+                    Enroll Online Web Development Coursse
+                    <b><i>free</i></b> tools
+                </p>
+                <button class="btn-dark">Download</button>
+            </div>
+            <div>
+                <img src="Images/Course01.png" />
+            </div>
+            
+        </div>
+    </header>
+
+
+    <!-- Course -->
+    <div id="second-section">
+        <div id="second-section-text">
+            <h2 class="section-heading">A Long Winded Header</h2>
+            <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <blockquote id="second-section-quote">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, 
+                maxime dolores! Iste, maiores praesentium. A sunt fugiat quos? Corporis 
+                repudiandae, quaerat accusantium repellat nam itaque, repellendus sunt 
+            </blockquote>
+
+            <button class="btn-white">Say Hello</button>
+        </div>
+
+        <div id="second-section-image">
+            <img src="Images/Course02.png" />
+        </div>
+    </div>
+
+    <div id="third_section">
+        <div id="third-section-image">
+            <img id="devices-image" src="Images/Course03.png" />
+        </div>
+
+        <div id="third-section-text">
+            <h2 class="section-heading">Another Header Section</h2>
+            <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <button class="btn-white">View More</button>
+        </div>
+    </div>
+
+    <div id="last-section">
+        <h2 id="last-section-heading">Another Header Section</h2>
+        <button class="btn-dark">Learn More</button>
+    </div>
+
+    <!-- Footer -->
+    <Footer>
+        <h3> About Us </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consectetur odio eveniet
+            <br>
+            dolores error hic quasi labore esse amet, quaerat tempore mollitia libero molestias reiciendis.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+        <p>
+            <i class="fa fa-copyright"> Copyright </i>
+        </p>
+    </Footer>
+
+    <!-- Script -->
+    <script>
+        var myNav = document.getElementById("myNav");
+        function showMenu() {
+            myNav.style.right = "0";
+        }
+        function closeMenu() {
+            myNav.style.right = "-150px";
+        }
+    </script>
+</body>
+
+</html>

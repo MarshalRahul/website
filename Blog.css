@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Header */
+header {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(3, 16, 44, 0.7), rgba(3, 16, 44, 0.7)),
+    url('../images02/bg001.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 12px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+.navigation-bar {
+    flex: 1;
+    text-align: right;
+}
+
+.navigation-bar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+}
+
+.navigation-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navigation-bar ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navigation-bar ul li:hover::after {
+    width: 100%;
+}
+
+.navigation-bar a:hover {
+    color: #00AFEF;
+}
+
+.text-box {
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 60px;
+}
+
+nav .fa {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 40px;
+    }
+
+    .text-box p {
+        margin: 10px;
+        font-size: 10px;
+        color: white;
+        line-height: 15px;
+    }
+
+    .navigation-bar ul li {
+        display: block;
+    }
+
+    .navigation-bar {
+        position: fixed;
+        background: #0387bb;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -150px;
+        text-align: left;
+        z-index: 2;
+
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .navigation-bar ul {
+        padding: 30px;
+    }
+}
+/* ........................ */
+
+
+/* STEPS SECTION STYLES START */
+#steps-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.step-item {
+    width: 25%;
+    padding: 112px 48px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.step-item i {
+    font-size: 96px;
+    transition: all 0.3s;
+    margin: 15px;
+}
+
+.step-item:hover i{
+    transform: scale(1.1, 1.1);
+}
+
+.step-item h3 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.step-item p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+#first-step {
+    background-color: #5acda6;
+}
+
+#second-step {
+    background-color: #91ac41;
+}
+
+#third-step {
+    background-color: #e4b476;
+}
+
+#fourth-step {
+    background-color: #f69dad;
+}
+
+#fifth-step {
+    background-color: #66afa9;
+}
+
+#sixth-step {
+    background-color: #7978d4;
+}
+
+#seventh-step {
+    background-color: #dae268;
+}
+
+#eighth-step {
+    background-color: #9dbcf6;
+}
+
+/* LAST SECTION START */
+#last-section{
+    width: 100%;
+    background-color: rgb(19, 196, 175);
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#last-section-heading {
+    font-weight: 300;
+    font-size: 42px;
+    color: #fff;
+    margin: 0;
+}
+
+
+/* .............. */
+
+/* Footer */
+footer {
+    width: 80%;
+    padding: 30px 0;
+    text-align: center;
+    margin: auto;
+}
+
+footer h3 {
+    margin: 20px;
+}
+
+footer p {
+    font-size: 15px;
+    color: #525252;
+    line-height: 22px;
+}
+
+.icons .fa {
+    color: #06b8ff;
+    padding: 25px 0;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    #steps-section {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .step-item {
+        width: 100%;
+    }
+    
+    #store-section {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #last-section{
+        padding: 60px 0;
+    }
+}
